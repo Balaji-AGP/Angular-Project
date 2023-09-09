@@ -1,0 +1,259 @@
+<div>
+  <div class="star">
+    <h2>Booking</h2>
+  </div>
+
+
+  <div class="card-group" >
+    <div class="card">
+      <img class="card-img-top" src="../../assets/Images/wedding1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">WEDDING</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">BOOK NOW</button>
+      </div>
+       
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fill The Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div  style="padding: 50px;  background-color:cadetblue;">
+                <input type="text" class="form-control" placeholder="Your Name" name="Names" [(ngModel)]="Names"><br>
+                <input type="email" class="form-control" placeholder="Your Email" name="Emails" [(ngModel)]="Emails"><br>
+                <input type="text" class="form-control"placeholder="Your Number" name="Numbers" [(ngModel)]="Numbers"><br>
+                <input type="date" class="form-control" style="margin-bottom:25px;" placeholder="Choose Date" name="dates" [(ngModel)]="dates">
+                <textarea type="text" class="form-control" value="Wedding" name="Message" [(ngModel)]="Message" readonly>{{Message1}}</textarea><br>
+                <!-- <button type="submit" class="btn btn-success" (click)="message()">Submit</button> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="message()">Booked</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../../assets/Images/bachelor1.png" height="300px" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">BACHELOR PARTY</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal01">BOOK NOW</button>
+      </div>
+       
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel01" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel01">Fill The Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div  style="padding: 50px;  background-color:darkgoldenrod;">
+                <input type="text" class="form-control" placeholder="Your Name" name="Names1" [(ngModel)]="Names1"><br>
+                <input type="email" class="form-control" placeholder="Your Email" name="Emails1" [(ngModel)]="Emails1"><br>
+                <input type="text" class="form-control"placeholder="Your Number" name="Numbers1" [(ngModel)]="Numbers1"><br>
+                <input type="date" class="form-control" style="margin-bottom:25px;" placeholder="Choose Date" name="dates1" [(ngModel)]="dates1">
+                <textarea type="text" class="form-control" value="bachelor" name="Message1" [(ngModel)]="Message1" readonly>{{Message1}}</textarea><br>
+                <!-- <button type="submit" class="btn btn-success" (click)="message1()">Submit</button> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="message1()">Booked</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../../assets/Images/birthday-cake.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">BIRTHDAY PARTY </h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      
+      <div class="card-footer text-center">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal02">BOOK NOW</button>
+      </div>
+       
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel02" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel02">Fill The Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div  style="padding: 50px;  background-color:fuchsia;">
+                <input type="text" class="form-control" placeholder="Your Name" name="Names2" [(ngModel)]="Names2"><br>
+                <input type="email" class="form-control" placeholder="Your Email" name="Emails2" [(ngModel)]="Emails2"><br>
+                <input type="text" class="form-control"placeholder="Your Number" name="Numbers2" [(ngModel)]="Numbers2"><br>
+                <input type="date" class="form-control" style="margin-bottom:25px;" placeholder="Choose Date" name="dates2" [(ngModel)]="dates2">
+                <textarea type="text" class="form-control" value="Birthday Party" name="Message2" [(ngModel)]="Message2" readonly>{{Message2}}</textarea><br>
+                <!-- <button type="submit" class="btn btn-success" (click)="message2()">Submit</button> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" (click)="message2()" class="btn btn-primary">Booked</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+
+  <div class="card-group" style="margin-top: 100px;">
+    <div class="card">
+      <img class="card-img-top" src="../../assets/Images/marriage-anniversary.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">WEDDING ANNIVERSARY</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal03">BOOK NOW</button>
+      </div>
+       
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel03" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel03">Fill The Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div  style="padding: 50px;  background-color:greenyellow;">
+                <input type="text" class="form-control" placeholder="Your Name" name="Names3" [(ngModel)]="Names3"><br>
+                <input type="email" class="form-control" placeholder="Your Email" name="Emails3" [(ngModel)]="Emails3"><br>
+                <input type="text" class="form-control"placeholder="Your Number" name="Numbers3" [(ngModel)]="Numbers3"><br>
+                <input type="date" class="form-control" style="margin-bottom:25px;" placeholder="Choose Date" name="dates3" [(ngModel)]="dates3">
+                <textarea type="text" class="form-control" value="Wedding Anniversary" name="Message3" [(ngModel)]="Message3" readonly>{{Message3}}</textarea><br>
+                <!-- <button type="submit" class="btn btn-success" (click)="message2()">Submit</button> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" (click)="message3()" class="btn btn-primary">Booked</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="../../assets/Images/Engagement.jpg" height="300px" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ENGAGEMENT</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal04">BOOK NOW</button>
+      </div>
+       
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel04" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel04">Fill The Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div  style="padding: 50px;  background-color:mediumorchid;">
+                <input type="text" class="form-control" placeholder="Your Name" name="Names4" [(ngModel)]="Names4"><br>
+                <input type="email" class="form-control" placeholder="Your Email" name="Emails4" [(ngModel)]="Emails4"><br>
+                <input type="text" class="form-control"placeholder="Your Number" name="Numbers4" [(ngModel)]="Numbers4"><br>
+                <input type="date" class="form-control" style="margin-bottom:25px;" placeholder="Choose Date" name="dates4" [(ngModel)]="dates4">
+                <textarea type="text" class="form-control" value="Engagement" name="Message4" [(ngModel)]="Message4" readonly>{{Message4}}</textarea><br>
+                <!-- <button type="submit" class="btn btn-success" (click)="message2()">Submit</button> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" (click)="message4()" class="btn btn-primary">Booked</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+    
+    <div class="card">
+      <img class="card-img-top" src="../../assets/Images/Mehendi.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">MEHENDI</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer text-center">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal05">BOOK NOW</button>
+      </div>
+       
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal05" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel05" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel05">Fill The Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div  style="padding: 50px;  background-color:darkslateblue;">
+                <input type="text" class="form-control" placeholder="Your Name" name="Names5" [(ngModel)]="Names5"><br>
+                <input type="email" class="form-control" placeholder="Your Email" name="Emails5" [(ngModel)]="Emails5"><br>
+                <input type="text" class="form-control"placeholder="Your Number" name="Numbers5" [(ngModel)]="Numbers5"><br>
+                <input type="date" class="form-control" style="margin-bottom:25px;" placeholder="Choose Date" name="dates5" [(ngModel)]="dates5">
+                <textarea type="text" class="form-control" value="Mehendi" name="Message5" [(ngModel)]="Message5" readonly>{{Message5}}</textarea><br>
+                <!-- <button type="submit" class="btn btn-success" (click)="message2()">Submit</button> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" (click)="message5()" class="btn btn-primary">Booked</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+</div>
